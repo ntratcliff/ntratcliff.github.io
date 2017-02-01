@@ -41,6 +41,7 @@ h1{
 #header #title {
     margin: 0 auto;
     position: absolute;
+    top: 24vh;
     width: 100%;
 }
 
