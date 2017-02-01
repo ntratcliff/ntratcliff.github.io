@@ -10,20 +10,38 @@ body {
 
 h1{
     font-family: 'Lustria', serif;
+    font-size: 60pt;
+    font-weight: 100;
 }
 
 #header {
+    /*background-image:url("media/img/bookshelf_computer.png");
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    width: 100%;
+    height: 100vh;
+    color: #fffff4;
+    overflow: hidden;
+}
+
+#header #header-background {
     background-image:url("media/img/bookshelf_computer.png");
     background-position:  center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 45vw;
-    padding-top: 10vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    filter: blur(5px) brightness(0.8);
 }
 
-#title {
+#header #title {
     margin: 0 auto;
+    position: absolute;
+    width: 100%;
 }
 
 #header #title h1, #header #title h3{
