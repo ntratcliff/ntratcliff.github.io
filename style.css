@@ -6,6 +6,7 @@ html {
 
 body {
     margin: 0;
+    background-color: #fffff4;
 }
 
 h1{
@@ -19,10 +20,11 @@ h1{
     background-position:  center;
     background-repeat: no-repeat;
     background-size: cover;*/
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     color: #fffff4;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 #header #header-background {
@@ -30,21 +32,111 @@ h1{
     background-position:  center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
+    height: 103vh;
+    width: 101vw;
+    float: left;
     z-index: 0;
-    filter: blur(5px) brightness(0.8);
+    filter: blur(5px) brightness(0.6);
+    margin: -10px -10px 20px -10px;
 }
 
 #header #title {
     margin: 0 auto;
     position: absolute;
-    top: 24vh;
+    top: 20vh;
     width: 100%;
 }
 
 #header #title h1, #header #title h3{
     text-align: center;
+    margin-bottom: 0;
+    font-size: 90pt;
+    line-height: 0.9em;
+}
+
+#header #title h3 {
+    margin-top: 0px;
+    font-weight: 100;
+    font-size: 38pt;
+}
+
+#title h3::before, #title h3::after{
+    content: " ";
+    /*background-color: #fffff4;*/
+    background: linear-gradient(to right, #fffff4, rgba(255,255,239, 0.9) 60%, rgba(255,255,239,0));
+    height: 2px;
+    width: 2.6em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.3em;
+}
+
+#title h3::before {
+    background: linear-gradient(to left, #fffff4, rgba(255,255,239, 0.9) 60%, rgba(255,255,239,0));
+}
+
+#header-nav {
+    margin: 3em auto;
+    text-align: center;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #fffff4;
+    font-weight: 300;
+    font-size: 48pt;
+    margin: 0 0.5em;
+}
+
+a:hover {
+    border-bottom: 2px solid #fffff4;
+}
+
+#nav {
+    padding: 12px 15px 10px 15px;
+    background-color: #333331;
+}
+
+#nav h1 {
+    font-size: 48pt;
+    font-weight: 100;
+    display: inline;
+    color: #fffff4;
+    margin: 0;
+    margin-right: 0.4em;
+    line-height: 0.9em;
+}
+
+#nav a {
+    font-size: 30pt;
+    margin: 0 0.3em;
+}
+
+.maxpagewidth {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main {
+    padding: 5px 15px 10px 15px;
+    background-color: #fffffa;
+}
+
+.post {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post>h1 {
+    color: #333331;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 42pt;
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #333331;
+}
+
+.post p {
+    margin-top: 2px;
 }
