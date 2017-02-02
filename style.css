@@ -97,6 +97,10 @@ a:hover {
     background-color: #333331;
 }
 
+#nav, #nav-clearfix {
+    height: 56px;
+}
+
 #nav h1 {
     font-size: 48pt;
     font-weight: 100;
@@ -113,6 +117,16 @@ a:hover {
     border-bottom-width: 1px;
 }
 
+#nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
 .maxpagewidth {
     max-width: 1200px;
     margin: 0 auto;
@@ -121,6 +135,7 @@ a:hover {
 #main {
     padding: 5px 15px 10px 15px;
     background-color: #fffffa;
+    box-shadow: 0 0 18x0px rgba(51, 51, 48, 0.2);
 }
 
 .post {

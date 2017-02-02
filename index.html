@@ -3,6 +3,7 @@
 <head>
 	<title>Noah Ratcliff</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <section id="header">
@@ -17,9 +18,10 @@
                 <a href="#">Contact</a>
             </div>
         </div>
-        
     </section>
     <section id="page">
+        <div id="nav-clearfix" class="hidden">
+        </div>
         <div id="nav">
             <div class="maxpagewidth">
                 <h1>NR</h1>
@@ -28,17 +30,38 @@
                 <a href="#">Contact</a>
             </div>
         </div>
+        <script type="text/javascript">
+            var nav = document.getElementById("nav");
+            var clearfix = document.getElementById("nav-clearfix");
+            var header = document.getElementById("header");
+            document.onscroll = function() {
+                if(pageYOffset > header.scrollHeight - 30){
+                    nav.setAttribute("class", "fixed");
+                    clearfix.setAttribute("class", "");
+                }
+                else{
+                    nav.setAttribute("class", "");
+                    clearfix.setAttribute("class", "hidden");
+                }
+            }
+        </script>
         <div id="main" class="maxpagewidth">
             <div class="post">
-                <h1>Lorem ipsum dolor <a name="portfolio" style="display: none;"></a></h1>
+                <h1>Lorem ipsum dolor<a name="portfolio"></a></h1>
                 <p>Phasellus sollicitudin risus et nibh gravida feugiat. In hac habitasse platea dictumst. Etiam pharetra, ipsum a ullamcorper euismod, neque tortor iaculis sem, quis rutrum odio odio in dui. Donec sit amet finibus mauris, vitae ultrices libero. Nulla elementum tristique tincidunt. Donec sodales dui quam, ornare blandit magna blandit eu. Proin ut vulputate justo.</p>
             </div>
             <div class="post">
                 <h1>Lorem ipsum dolor</h1>
-                <p>Phasellus sollicitudin risus et nibh gravida feugiat. In hac habitasse platea dictumst. Etiam pharetra, ipsum a ullamcorper euismod, neque tortor iaculis sem, quis rutrum odio odio in dui. Donec sit amet finibus mauris, vitae ultrices libero. Nulla elementum tristique tincidunt. Donec sodales dui quam, ornare blandit magna blandit eu. Proin ut vulputate justo.</p>
+                <p>Nunc id convallis mi, quis consectetur neque. Vivamus quam nisl, tincidunt vel mauris nec, fermentum convallis massa. Quisque in tristique felis. Sed commodo odio nisl, nec accumsan lectus tristique vitae. Mauris hendrerit venenatis augue tincidunt mollis. Fusce venenatis augue non massa tincidunt volutpat. Proin scelerisque malesuada urna, ut laoreet dolor convallis interdum. Nullam elementum, orci eget gravida fermentum, ex lectus porttitor mi, nec posuere elit ipsum eu sem. In hac habitasse platea dictumst. Phasellus vehicula purus eget iaculis dapibus. Nunc et enim turpis. Morbi et risus tincidunt, malesuada urna et, molestie tortor. Aliquam erat volutpat. Vivamus sit amet ante dapibus, mollis orci in, venenatis tortor. Cras ut porta massa, eu volutpat lorem. Mauris aliquet, nisl nec hendrerit dignissim, quam ligula ornare tortor, ut ultrices ante velit non nunc.</p>
+                
+                <p>Maecenas pharetra facilisis ex sed iaculis. Nam suscipit, massa vitae luctus euismod, nisi arcu eleifend mauris, vitae pellentesque risus justo eget nisi. Suspendisse euismod, sapien ac venenatis dictum, magna dolor tempor lacus, in imperdiet tortor est a eros. Etiam tempus gravida eros et mollis. Donec nisi ligula, viverra placerat consectetur eget, venenatis a nunc. In in dignissim augue. Praesent nec libero condimentum, gravida dolor non, placerat ligula. Cras aliquet sapien sed rhoncus consectetur. Nunc cursus imperdiet ex, ac dictum mauris imperdiet in. Nunc egestas erat metus.</p>
             </div>
             <div class="post">
                 <h1>Lorem ipsum dolor</h1>
+                <p>Phasellus lacinia maximus est non efficitur. Nullam non egestas leo, sed facilisis ex. In pellentesque augue id nunc euismod imperdiet. Duis sodales ultricies dapibus. Cras id tempus sem. Cras sit amet facilisis dui, vel condimentum tellus. Integer cursus metus et sem blandit malesuada. Morbi at metus elit. Nulla venenatis mauris eu justo condimentum tristique. Nullam ultricies aliquet nisl nec egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque nec sodales ex, sit amet mattis augue. Quisque interdum aliquam mauris eget luctus. Integer venenatis sodales accumsan. Sed molestie justo quis lacinia venenatis.</p>
+                <p>Nunc id convallis mi, quis consectetur neque. Vivamus quam nisl, tincidunt vel mauris nec, fermentum convallis massa. Quisque in tristique felis. Sed commodo odio nisl, nec accumsan lectus tristique vitae. Mauris hendrerit venenatis augue tincidunt mollis. Fusce venenatis augue non massa tincidunt volutpat. Proin scelerisque malesuada urna, ut laoreet dolor convallis interdum. Nullam elementum, orci eget gravida fermentum, ex lectus porttitor mi, nec posuere elit ipsum eu sem. In hac habitasse platea dictumst. Phasellus vehicula purus eget iaculis dapibus. Nunc et enim turpis. Morbi et risus tincidunt, malesuada urna et, molestie tortor. Aliquam erat volutpat. Vivamus sit amet ante dapibus, mollis orci in, venenatis tortor. Cras ut porta massa, eu volutpat lorem. Mauris aliquet, nisl nec hendrerit dignissim, quam ligula ornare tortor, ut ultrices ante velit non nunc.</p>
+                
+                <p>Maecenas pharetra facilisis ex sed iaculis. Nam suscipit, massa vitae luctus euismod, nisi arcu eleifend mauris, vitae pellentesque risus justo eget nisi. Suspendisse euismod, sapien ac venenatis dictum, magna dolor tempor lacus, in imperdiet tortor est a eros. Etiam tempus gravida eros et mollis. Donec nisi ligula, viverra placerat consectetur eget, venenatis a nunc. In in dignissim augue. Praesent nec libero condimentum, gravida dolor non, placerat ligula. Cras aliquet sapien sed rhoncus consectetur. Nunc cursus imperdiet ex, ac dictum mauris imperdiet in. Nunc egestas erat metus.</p>
                 <p>Phasellus sollicitudin risus et nibh gravida feugiat. In hac habitasse platea dictumst. Etiam pharetra, ipsum a ullamcorper euismod, neque tortor iaculis sem, quis rutrum odio odio in dui. Donec sit amet finibus mauris, vitae ultrices libero. Nulla elementum tristique tincidunt. Donec sodales dui quam, ornare blandit magna blandit eu. Proin ut vulputate justo.</p>
             </div>
         </div>
