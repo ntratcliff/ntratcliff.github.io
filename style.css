@@ -95,10 +95,11 @@ a:hover {
 #nav {
     padding: 12px 15px 10px 15px;
     background-color: #333331;
+    box-sizing: border-box;
 }
 
 #nav, #nav-clearfix {
-    height: 56px;
+    height: 76px;
 }
 
 #nav h1 {
